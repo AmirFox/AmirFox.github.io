@@ -1,15 +1,16 @@
 import './App.css'
+import { Container, Typography } from '@mui/material'
 
 function App() {
   return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Welcome to my page</h1>
-        </header>
+      <Container className="App">
+        <Typography variant="h4" component="h1" gutterBottom>
+          Welcome to my page
+        </Typography>
         <main>
           {/*TODO: Add main content here */}
         </main>
-      </div>
+      </Container>
   );
 }
 
