@@ -5,7 +5,7 @@ import About from "../about/About";
 import Portfolio from "../portfolio/Portfolio";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
-import Navbar from '../navbar/NavBar';
+import NavBar from '../navBar/NavBar';
 
 export default function BaseLayout() {
    let [darkMode, setDarkMode] = useState(false);
@@ -32,7 +32,7 @@ export default function BaseLayout() {
          <Grid container display={'flex'} flexDirection={'column'} minHeight={'100vh'}
                justifyContent={'space-between'}>
             <Grid item>
-               <Navbar darkMode={darkMode} handleClick={handleToggleDarkMode}/>
+               <NavBar darkMode={darkMode} handleClick={handleToggleDarkMode}/>
             </Grid>
             <Grid item flexGrow={2}>
                <Routes>

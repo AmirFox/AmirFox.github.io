@@ -29,7 +29,7 @@ const links = [
     }
 ]
 
-const Navbar = (props: {darkMode: boolean, handleClick : MouseEventHandler}) => {
+const NavBar = (props: {darkMode: boolean, handleClick : MouseEventHandler}) => {
     const location = useLocation()
     const [, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
 
@@ -55,4 +55,4 @@ const Navbar = (props: {darkMode: boolean, handleClick : MouseEventHandler}) => 
     )
 }
 
-export default Navbar;
+export default NavBar;
