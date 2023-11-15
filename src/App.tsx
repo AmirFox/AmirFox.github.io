@@ -1,17 +1,16 @@
-import './App.css'
-import { Container, Typography } from '@mui/material'
+import './App.module.scss';
+import BaseLayout from "./components/baseLayout/BaseLayout";
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
-  return (
-      <Container className="App">
-        <Typography variant="h4" component="h1" gutterBottom>
-          Welcome to my page
-        </Typography>
-        <main>
-          {/*TODO: Add main content here */}
-        </main>
-      </Container>
-  );
+   return (
+      <div>
+         <BrowserRouter>
+            <BaseLayout/>
+         </BrowserRouter>
+      </div>
+   );
 }
 
-export default App
+
+export default App;
