@@ -1,9 +1,9 @@
 import {MouseEventHandler, useState} from 'react';
-import {Style} from './Navbar.module.scss';
-import {Toggler} from "../home/Toggler";
 import {Link, useLocation} from "react-router-dom";
 import {Box} from "@mui/material";
 import {info} from "../../info/Info";
+import Toggler from '../home/Toggler';
+import Style from './Navbar.module.scss'
 
 const links = [
     {
@@ -29,7 +29,7 @@ const links = [
     }
 ]
 
-export default function Navbar(props: {darkMode: boolean, handleClick : MouseEventHandler}) {
+const Navbar = (props: {darkMode: boolean, handleClick : MouseEventHandler}) => {
     const location = useLocation()
     const [, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
 
@@ -54,3 +54,5 @@ export default function Navbar(props: {darkMode: boolean, handleClick : MouseEve
         </Box>
     )
 }
+
+export default Navbar;

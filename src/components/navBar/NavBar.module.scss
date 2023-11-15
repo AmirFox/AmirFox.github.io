@@ -1,5 +1,7 @@
+@import "../variables.modules";
+
 nav {
-  transition: transition;
+  transition: $transition;
 }
 
 .active {
@@ -8,11 +10,11 @@ nav {
 }
 
 li {
-  transition: transition;
+  transition: $transition;
 
   &:hover {
     transform: translateY(-3px);
-    transition: transition;
+    transition: $transition;
   }
 }
 

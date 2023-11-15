@@ -1,7 +1,7 @@
 import { MouseEventHandler } from 'react';
 import {Box} from "@mui/material";
 
-export default function Toggler(props : {darkMode : boolean, handleClick : MouseEventHandler}) {
+const Toggler = (props : {darkMode : boolean, handleClick : MouseEventHandler}) => {
     const transition = 'all 250ms ease'
 
    return (
@@ -15,3 +15,5 @@ export default function Toggler(props : {darkMode : boolean, handleClick : Mouse
       </Box>
    )
 }
+
+export default Toggler;
