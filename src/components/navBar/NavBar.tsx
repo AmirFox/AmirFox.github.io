@@ -1,4 +1,4 @@
-import React, {MouseEventHandler, useState} from 'react';
+import {MouseEventHandler, useState} from 'react';
 import Style from './Navbar.module.scss';
 import Toggler from "../home/Toggler";
 import {Link, useLocation} from "react-router-dom";
@@ -31,7 +31,7 @@ const links = [
 
 export default function Navbar(props: {darkMode: boolean, handleClick : MouseEventHandler}) {
     const location = useLocation()
-    const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
+    const [, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
 
     return (
         <Box component={'nav'} width={'100%'}>

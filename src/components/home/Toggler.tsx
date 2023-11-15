@@ -1,4 +1,4 @@
-import React, { MouseEventHandler } from 'react';
+import { MouseEventHandler } from 'react';
 import {Box} from "@mui/material";
 
 export default function Toggler(props : {darkMode : boolean, handleClick : MouseEventHandler}) {

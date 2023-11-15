@@ -1,4 +1,3 @@
-import React from 'react';
 import Style from './Home.module.scss';
 import me from '../../../public/profile.png';
 import classNames from 'classnames';

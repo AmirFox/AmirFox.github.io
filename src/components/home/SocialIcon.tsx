@@ -1,5 +1,3 @@
-import React from 'react';
-
 function SocialIcon(props : {link: string, icon : string, label : string}) {
     return (
         <a target="_blank" aria-label={props.label}

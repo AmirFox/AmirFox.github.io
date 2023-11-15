@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import Style from './BaseLayout.module.scss'
 import Navbar from '../navBar/NavBar';
 import Home from "../home/Home";
