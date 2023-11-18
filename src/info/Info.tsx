@@ -15,7 +15,7 @@ export const info = {
     miniBio: [ 
         {
             emoji: '👨‍💻',
-            text: 'Frontend Engineer'
+            text: 'Web Application Engineer'
         },
         {
             emoji: '🗾',

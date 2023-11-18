@@ -32,7 +32,7 @@ const NavBar = (props: {darkMode: boolean, handleClick : MouseEventHandler}) => 
                     <Toggler darkMode={props.darkMode} handleClick={props.handleClick}/>
             <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'}
                  gap={{xs: '2rem', md: '8rem'}}
-                 textTransform={'lowercase'} fontSize={'1rem'}>
+                 textTransform={'lowercase'} fontSize={'.51rem'}>
                 {links.map((link, index) => (
                     <Box key={index} component={'li'} className={Style.active}
                          sx={{borderImageSource: info.gradient}}>
