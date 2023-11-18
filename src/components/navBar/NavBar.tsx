@@ -37,8 +37,8 @@ const NavBar = (props: {darkMode: boolean, handleClick : MouseEventHandler}) => 
                     <Box key={index} component={'li'} className={Style.active}
                          sx={{borderImageSource: info.gradient}}>
                         <Link to={link.to} onClick={() => setActive(link.active)} className={Style.link}>
-                            {!link.type && <p style={{padding: '0.5rem 0'}}>{link.name}</p>}
-                            {link.type && <h1>{link.name}</h1>}
+                            {!link.name && <p style={{padding: '0.5rem 0'}}>{link.name}</p>}
+                            {link.name && <h1>{link.name}</h1>}
                         </Link>
                     </Box>
                 ))}
