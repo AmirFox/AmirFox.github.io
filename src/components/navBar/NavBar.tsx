@@ -17,12 +17,6 @@ const links = [
         active: 'about'
     },
     {
-        name: info.initials,
-        type: 'initials',
-        to: '/',
-        active: 'home'
-    },
-    {
         name: 'Portfolio',
         to: '/portfolio',
         active: 'portfolio'
@@ -35,6 +29,7 @@ const NavBar = (props: {darkMode: boolean, handleClick : MouseEventHandler}) => 
 
     return (
         <Box component={'nav'} width={'100%'}>
+                    <Toggler darkMode={props.darkMode} handleClick={props.handleClick}/>
             <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'}
                  gap={{xs: '2rem', md: '8rem'}}
                  textTransform={'lowercase'} fontSize={'1rem'}>
@@ -47,9 +42,6 @@ const NavBar = (props: {darkMode: boolean, handleClick : MouseEventHandler}) => 
                         </Link>
                     </Box>
                 ))}
-                <li>
-                    <Toggler darkMode={props.darkMode} handleClick={props.handleClick}/>
-                </li>
             </Box>
         </Box>
     )
