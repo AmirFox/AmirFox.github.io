@@ -6,11 +6,10 @@ export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 export const info = {
     firstName: "Amir",
     lastName: "Fox",
-    initials: "af",
+    headline: "Hi, I'm Amir,",
     byline: "and I build cool stuff!",
     position: "Frontend Developer",
     selfPortrait: self, // don't change
-    gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change
     baseColor: colors[0],
     miniBio: [ 
         {
